@@ -12,7 +12,7 @@ Most of my projects are modular in nature. Yours probably are too. The large bul
 - Data analysis
 - Web development
 
-For each of these tasks, I've found a set of Python libraries that fit my needs well. Rather than download and install SciPy for the nth time, wouldn't it be nice just to build on top of already-installed versions? Enter `envplus`.
+For each of these tasks, [I've found a set of Python libraries](https://github.com/jsvine/virtualenv-recipes/) that fit my needs well. Rather than download and install SciPy for the nth time, wouldn't it be nice just to build on top of already-installed versions? Enter `envplus`.
 
 ## How It Works
 
