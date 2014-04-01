@@ -61,31 +61,31 @@ def parse_args():
     parser = argparse.ArgumentParser(description="Combine your virtualenvs.", prog="envplus")
     subparsers = parser.add_subparsers(title="Subcommands", dest="command")
 
-    parser_run = subparsers.add_parser("run")
-    parser_run.add_argument("cmd",
-        nargs=argparse.REMAINDER,
-        help="Command to run, with optional arguments.")
-
+    # envplus add
     parser_add = subparsers.add_parser("add")
     parser_add.add_argument("envs",
         nargs="+",
         help="virtualenvs to add to current virtualenv's path")
 
+    # envplus rm
     parser_rm = subparsers.add_parser("rm")
     parser_rm.add_argument("envs",
         nargs="+",
         help="virtualenvs to remove from current virtualenv's path")
 
+    # envplus pause
     parser_pause = subparsers.add_parser("pause")
     parser_pause.add_argument("envs",
         nargs="*",
         help="virtualenvs to pause. Defaults to all.")
 
+    # envplus resume
     parser_resume = subparsers.add_parser("resume")
     parser_resume.add_argument("envs",
         nargs="*",
         help="virtualenvs to resume. Defaults to all.")
 
+    # envplus ls
     parser_ls = subparsers.add_parser("ls")
     parser_ls.add_argument("--paused", "-p",
         action="store_true",
@@ -94,8 +94,19 @@ def parse_args():
         action="store_true",
         help="Show paused *and* active virtualenvs")
 
-    parser_cat = subparsers.add_parser("cat")
+    # envplus run
+    parser_run = subparsers.add_parser("run")
+    parser_run.add_argument("cmd",
+        nargs=argparse.REMAINDER,
+        help="Command to run, with optional arguments.")
+
+    # envplus path
     parser_path = subparsers.add_parser("path")
+
+    # envplus cat
+    parser_cat = subparsers.add_parser("cat")
+
+    # envplus edit
     parser_edit = subparsers.add_parser("edit")
 
     args = parser.parse_args()

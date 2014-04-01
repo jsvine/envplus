@@ -60,6 +60,8 @@ Now you can use `requests`, `lxml`, `cssselect`, and `dataset` in your `buzzcats
 
 To use `envplus`, [`virtualenvwrapper`](http://virtualenvwrapper.readthedocs.org/en/latest/) must be installed and __your target virtualenv must be currenlty activated__.
 
+---
+
 ### envplus add [envs]
 
 Make another virtualenv's packages available to your current virtualenv. Accepts multiple, space-separated virtualenv names.
