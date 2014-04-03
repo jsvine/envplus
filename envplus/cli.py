@@ -55,7 +55,7 @@ def cmd_path(pf, args):
 
 def cmd_run(pf, args):
     command = " ".join(args.cmd)
-    run_in_env([ os.environ["SHELL"], "-c", "-i", command ])
+    run_in_env(pf, [ os.environ["SHELL"], "-c", "-i", command ])
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Combine your virtualenvs.", prog="envplus")
