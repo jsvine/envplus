@@ -20,13 +20,9 @@ For each of these tasks, [I've found a set of Python libraries](https://github.c
 
 ## Installation
 
-While `envplus` is still in early development, install it from the GitHub repo:
-
 ```sh
-pip install git+https://github.com/jsvine/envplus.git#egg=envplus
+pip install envplus
 ```
-
-Once a few people have kicked the tires, I'll upload a proper distribution to PyPi.
 
 ## Walkthrough
 
